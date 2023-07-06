@@ -1,0 +1,288 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fd4c82;
+    --back-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.active {
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.active:hover {
+    color: black;
+
+}
+
+header {
+    background: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url('../images/bg_1.jpg') no-repeat center center / cover;
+}
+
+header .contact {
+    padding: 13px 0;
+}
+
+header .contact>div:first-child {
+    font-size: 12px;
+    color: gray;
+}
+
+header .contact>div:first-child span {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .contact i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header .contact i:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav {
+    background-color: white;
+    padding: 18px;
+}
+
+.logo i {
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+.logo h4 {
+    font-size: 20px;
+}
+
+.logo h4 span {
+    font-size: 11px;
+    color: var(--primary-color);
+}
+
+nav ul {
+    gap: 60px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav ul li:last-child>a,
+.call-to-actions>a {
+    background-color: var(--primary-color);
+    padding: 19px 20px;
+    display: inline-block;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li:last-child>a:hover {
+    color: black;
+}
+
+.intro {
+    padding: 68px 0;
+    width: 40%;
+}
+
+.intro h1 {
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.intro p,
+.welcome .welcome-text>p {
+    color: gray;
+    line-height: 28px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.call-to-actions>a {
+    border-radius: 5px;
+}
+
+.call-to-actions>a:nth-child(2) {
+    background-color: #91c235;
+    border: #91c235 1px solid;
+}
+
+.call-to-actions>a:nth-child(2):hover {
+    border: #91c235 1px solid;
+    color: #91c235;
+    background-color: transparent;
+}
+
+.services {
+    gap: 25px;
+    transform: translate(0, -50%);
+}
+
+.services-child {
+    background-color: white;
+    gap: 22px;
+    line-height: 30px;
+    padding: 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.services-child:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.3s;
+}
+
+.services-child:hover i {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.services-child>i {
+    font-size: 40px;
+    background: rgb(206, 206, 206);
+    border-radius: 50%;
+    padding: 12px;
+    color: var(--primary-color);
+}
+
+.services-child p {
+    color: gray;
+    font-size: 17px;
+}
+
+.welcome {
+    background-color: var(--back-color);
+    padding-top: 150px;
+}
+
+.welcome .welcome-image {
+    background: url('../images/about.jpg.webp') no-repeat center center / cover;
+
+    width: 40%;
+}
+
+.welcome .welcome-text {
+    width: 60%;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.welcome .welcome-text span {
+    color: var(--primary-color);
+}
+
+.welcome .welcome-text h3 {
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.welcome i {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 25px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.welcome ul li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 20px;
+}
+
+.appointment {
+    margin: 50px 0;
+}
+
+.appointment h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    /* font-size: 22; */
+}
+
+.appointment input,
+.appointment select,
+.appointment textarea,
+.appointment button {
+    width: 20%;
+    flex-grow: 1;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(150, 150, 150);
+    font-weight: normal;
+    height: 50px;
+}
+
+.appointment textarea{
+    resize: none;
+}
+
+form>div.d-flex {
+    column-gap: 30px;
+    row-gap: 13px;
+}
+
+.appointment input:focus {
+    outline: none;
+}
